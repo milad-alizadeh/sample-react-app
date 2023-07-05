@@ -1,6 +1,12 @@
 import './App.css'
 import PropTypes from 'prop-types'
 import React from 'react'
+import styled from '@emotion/styled'
+
+const Title = styled.h1`
+  text-align: left;
+  font-size: 40px;
+`
 
 const PokemonRow = ({ pokemon, onSelect }) => (
   <tr>
@@ -74,7 +80,7 @@ function App() {
         paddingTop: '1rem'
       }}
     >
-      <h1 className="title">Pokemon Search</h1>
+      <Title>Pokemon Search</Title>
       <div style={{
         display: 'grid',
         gridTemplateColumns: '70% 30%',
